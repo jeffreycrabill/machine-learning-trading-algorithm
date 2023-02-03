@@ -1,5 +1,18 @@
 # challenge14
-The purpose of this project is use machine learning to build the optimal neural network for predicting whether or not a start up will become profitable.
+The purpose of this project is use build a trading algorithm which uses machine learning to adapt to new data.  Multiple Algorithms were made and tested over 2 different machine learning protocols.
+
+The original algorithm left much to be desired.
+![Original Setup](/images/originalsetup.jpg)
+
+Reducing the training period slightly impoved results.
+![Reduced Training](/images/offset3days505dma.pngimages\offset3days505dma.png)
+
+We found much better results by changing the signal to rely on closing price and one moving average, as opposed to just two moving averages.
+![SMA Over Close](/images/output.png)
+
+However it still very slightly underperformed the market due to falling behind in the learning stage.
+Our model closely followed the performance of the market, so adjusting the time period affected the model similarly to how it affected the market
+[2020](/images/2020.png)
 
 ## Technologies
 This project was created with on JupyterLab with python v3.7.13.  It also uses the packages pandas, sklearn and hvPlot
@@ -12,7 +25,9 @@ This project was created with on JupyterLab with python v3.7.13.  It also uses t
 
 ---
 ## Strategy Results 
-
+We found that the Adaboost classifier performed better than the SVM classifier, however the market performance of both was very similar
+![Classification Results](/images/classreport.png)
+![Market Performance](/images/output2.png)
 ## Installation Guide
 
 Be sure to have python, jupyterlab, sklearn, and pandas installed before running the data.  To download Python, visit (https://www.python.org/downloads/).  Pandas and sklearn can be installed with the pip in terminal.  
@@ -20,7 +35,7 @@ Be sure to have python, jupyterlab, sklearn, and pandas installed before running
 ---
 
 ## Usage
-To use this data, download the venture_funding_with_deep_learning.ipynb file from the repository at (https://github.com/jeffreycrabill/challenge13.  Open up the venture_funding_with_deep_learning.ipynbS file in VS Code or a Juypter Lab Kernel.  <br>
+To use this data, download the machine_learning_trading_bot.ipynb file from the repository at (https://github.com/jeffreycrabill/challenge14.  Open up the venture_funding_with_deep_learning.ipynbS file in VS Code or a Juypter Lab Kernel.  <br>
 
 
 
