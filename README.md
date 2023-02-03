@@ -12,7 +12,7 @@ We found much better results by changing the signal to rely on closing price and
 
 However it still very slightly underperformed the market due to falling behind in the learning stage.
 Our model closely followed the performance of the market, so adjusting the time period affected the model similarly to how it affected the market <br>
-[2020](/images/2020.png)
+![2020](/images/2020.png)
 
 ## Technologies
 This project was created with on JupyterLab with python v3.7.13.  It also uses the packages pandas, sklearn and hvPlot
