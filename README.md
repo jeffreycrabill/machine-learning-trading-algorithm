@@ -2,16 +2,16 @@
 The purpose of this project is use build a trading algorithm which uses machine learning to adapt to new data.  Multiple Algorithms were made and tested over 2 different machine learning protocols.
 
 The original algorithm left much to be desired.
-![Original Setup](/images/originalsetup.jpg)
+![Original Setup](/images/originalsetup.png)
 
 Reducing the training period slightly impoved results.
-![Reduced Training](/images/offset3days505dma.pngimages\offset3days505dma.png)
+![Reduced Training](/images/offset3days505dma.png)
 
 We found much better results by changing the signal to rely on closing price and one moving average, as opposed to just two moving averages.
 ![SMA Over Close](/images/output.png)
 
 However it still very slightly underperformed the market due to falling behind in the learning stage.
-Our model closely followed the performance of the market, so adjusting the time period affected the model similarly to how it affected the market
+Our model closely followed the performance of the market, so adjusting the time period affected the model similarly to how it affected the market <br>
 [2020](/images/2020.png)
 
 ## Technologies
